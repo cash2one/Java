@@ -1,0 +1,15 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="testjar:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/testjar_jar</output-path>
+    <root id="archive" name="testjar.jar">
+      <element id="module-output" name="testjar" />
+      <element id="dir-copy" path="$PROJECT_DIR$/src/main/java" />
+      <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.9" />
+      <element id="library" level="project" name="Maven: commons-logging:commons-logging:1.2" />
+      <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpclient:4.4.1" />
+      <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpcore:4.4.1" />
+      <element id="library" level="project" name="Maven: org.apache.thrift:libthrift:0.9.3" />
+      <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.12" />
+    </root>
+  </artifact>
+</component>

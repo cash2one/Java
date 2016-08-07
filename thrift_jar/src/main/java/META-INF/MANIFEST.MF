@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Class-Path: httpcore-4.4.1.jar slf4j-api-1.7.12.jar libthrift-0.9.3.ja
+ r commons-codec-1.9.jar httpclient-4.4.1.jar commons-logging-1.2.jar
+Main-Class: com.haizhi.HelloServiceServer
+
