@@ -1,4 +1,4 @@
-package com.demo;
+package com.zkClient;
 
 import org.I0Itec.zkclient.ZkClient;
 import org.I0Itec.zkclient.serialize.SerializableSerializer;
