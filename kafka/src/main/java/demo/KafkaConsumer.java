@@ -19,8 +19,7 @@ public class KafkaConsumer extends Thread
 
     public KafkaConsumer(String topic)
     {
-        consumer = kafka.consumer.Consumer.createJavaConsumerConnector(
-                createConsumerConfig());
+        consumer = kafka.consumer.Consumer.createJavaConsumerConnector(createConsumerConfig());
         this.topic = topic;
     }
 
@@ -39,10 +38,15 @@ public class KafkaConsumer extends Thread
     @Override
     public void run() {
         Map<String, Integer> topicCountMap = new HashMap<String, Integer>();
+
         topicCountMap.put(topic, new Integer(1));
+
         Map<String, List<KafkaStream<byte[], byte[]>>> consumerMap = consumer.createMessageStreams(topicCountMap);
+
         KafkaStream<byte[], byte[]> stream = consumerMap.get(topic).get(0);
+
         ConsumerIterator<byte[], byte[]> it = stream.iterator();
+
         while (it.hasNext()) {
             System.out.println("receive：" + new String(it.next().message()));
             try {

@@ -6,6 +6,7 @@ public interface KafkaProperties
     final static String zkConnect = "bdp-001:2181,bdp-002:2181,bdp-003:2181";
     final static String kafkaConnect = "bdp-001:9092";
     final static String groupId = "console-consumer-2";
+//    final static String groupId = "test-consumer-group";
     final static String topic = "mytest1";
     final static String kafkaServerURL = "bdp-001:9092";
     final static int kafkaServerPort = 9092;
