@@ -29,14 +29,14 @@ public class ThriftImpl implements KkLog.Iface {
     }
 
     public boolean sendLog(String type, String data){
-        message = type + "::" + data;
-        System.out.println("received log: " + message);
-
+        message = type + "||" + data;
+        System.out.println("received log111: " + message);
 
         //todo 把数据传给kafka
         producer.send( new KeyedMessage<Integer, String>(topic, message) );
 
-        
+        //System.out.println(message);
+
         return true;
     }
 

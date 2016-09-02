@@ -6,6 +6,7 @@ package com.haizhi.main;
 
 import org.apache.thrift.TApplicationException;
 import org.apache.thrift.TException;
+import org.apache.thrift.protocol.TBinaryProtocol;
 import org.apache.thrift.protocol.TCompactProtocol;
 import org.apache.thrift.protocol.TProtocol;
 import org.apache.thrift.transport.TFramedTransport;
@@ -31,7 +32,8 @@ public class ThriftClient {
 
     public static void main(String[] args) {
         TTransport transport = new TFramedTransport(new TSocket(IP, PORT, clientTimeout));
-        TProtocol protocol = new TCompactProtocol(transport);
+//        TProtocol protocol = new TCompactProtocol(transport);
+        TProtocol protocol = new TBinaryProtocol(transport);
         KkLog.Client client = new KkLog.Client(protocol);
 
         try {
@@ -45,7 +47,7 @@ public class ThriftClient {
                 //todo 无效token的后续处理
             }
 
-            String firstLog="1|jiangsu|1000\n2|minhang|2100\n1|jilin|5000";
+            String firstLog="1|jiangsu|1000\n2|minhang|2100\n1|jilin|5000111111111111111";
             client.sendLog("tv_source",firstLog);
 
             System.out.println("请输入日志\"exit\"结束:");

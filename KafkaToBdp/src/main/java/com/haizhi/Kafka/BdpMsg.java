@@ -23,7 +23,7 @@ public class BdpMsg {
 
         DS ds = client.getDs("dsName");
 
-        Map<String, Table> tablesMap = ds.get_all_tables();
+       // Map<String, Table> tablesMap = ds.get_all_tables();
 
         Table table = ds.getTable("tableName");
 
