@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Class-Path: opends-sdk-java-0.1.0-jar-kj.jar ojdbc6.jar db2jcc_license
+ _cu.jar db2jcc.jar mysql-connector-java-5.1.39-bin.jar
+Main-Class: com.haizhi.Main
+

@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Class-Path: mysql-connector-java-5.1.39-bin.jar ojdbc6.jar opends-sdk-
+ java-0.1.0-jar-kj.jar
+Main-Class: com.haizhi.Main
+

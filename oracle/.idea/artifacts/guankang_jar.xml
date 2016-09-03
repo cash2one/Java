@@ -1,0 +1,25 @@
+<component name="ArtifactManager">
+  <artifact name="guankang:jar">
+    <output-path>$PROJECT_DIR$/classes/artifacts/guankang_jar</output-path>
+    <root id="root">
+      <element id="archive" name="oracle.jar">
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/src/main/resources/guankang/META-INF/MANIFEST.MF" />
+        </element>
+        <element id="module-output" name="oracle" />
+      </element>
+      <element id="file-copy" path="D:/java/hadoo_lib/mysql-connector-java-5.1.39-bin.jar" />
+      <element id="file-copy" path="D:/java/hadoo_lib/ojdbc6.jar" />
+      <element id="file-copy" path="D:/java/hadoo_lib/opends-sdk-java-0.1.0-jar-kj.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/KONKA.properties" />
+      <element id="file-copy" path="$PROJECT_DIR$/oracle.iml" />
+      <element id="file-copy" path="$PROJECT_DIR$/bms.properties" />
+      <element id="file-copy" path="$PROJECT_DIR$/common.properties" />
+      <element id="file-copy" path="$PROJECT_DIR$/ankang.properties" />
+      <element id="file-copy" path="$PROJECT_DIR$/start.sh" />
+      <element id="file-copy" path="$PROJECT_DIR$/guankang.properties" />
+      <element id="file-copy" path="$PROJECT_DIR$/kunkang.properties" />
+      <element id="file-copy" path="$PROJECT_DIR$/log.properties" />
+    </root>
+  </artifact>
+</component>
